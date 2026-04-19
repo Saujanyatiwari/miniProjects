@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import {useState} from 'react';
 
@@ -5,6 +6,19 @@ function App() {
   // The count is the state variable here and Setcount is the function that updates the count variable
   const [count , Setcount] = useState(0);
  // useState is a hook and the value passed in it only renders once at the start 
+
+ // useEffect ] Analogy : useEffects cause side effects when something changes 
+ // it consist of three things : setup , return(optional, used for cleanups) , dependencies
+ //When a state changes then along with it some other piece of code will run that is present in useEffect
+// SYNTAX
+ useEffect(() => {
+  // The code we want to run
+
+  // return function(optional)
+  return() =>{
+
+  };
+ }, []); //dependencies(the function or variable or states on which effect will occur) 
 
   return(
     <div>
